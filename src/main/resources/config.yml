@@ -1,0 +1,22 @@
+# MiningBoost configuration — by kezdev: https://github.com/kezdev
+#
+# Boost = multiplier while holding a tool. 0.05 = +5%, 1.5 = +150%, 0 = off.
+#
+# How the two boosts combine (Diamond Pickaxe + Efficiency I on stone):
+#   base tool speed ........ 8
+#   Efficiency I bonus ..... 2   (vanilla: level^2 + 1)
+#   efficiency-boost 0.05 .. 2 x 1.05 = 2.1
+#   total before break ..... 8 + 2.1 = 10.1
+#   break-speed-boost 1.5 .. 10.1 x 2.5 = 25.25   (vanilla would be 10)
+# break-speed multiplies EVERYTHING, so the Efficiency part gets both boosts
+# while the base tool speed only gets break-speed. Enchanted tools pull ahead.
+
+break-speed-boost: 1.5    # overall mining speed (base tool speed + Efficiency)
+efficiency-boost: 0.05    # extra boost applied to ONLY the Efficiency enchant bonus
+
+tools:                    # which tool types get the boost
+  pickaxe: true
+  axe: true
+  shovel: true
+  hoe: true
+  shears: true
