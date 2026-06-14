@@ -1,6 +1,6 @@
 # MiningBoost
 
-A Paper plugin for Minecraft 26.1.2 that makes mining faster while you hold a tool.
+A Paper plugin for Minecraft 26.1.* that makes mining faster while you hold a tool.
 Enchanted tools get an extra nudge on top. Everything is configurable.
 
 By [kezdev](https://github.com/kezdev).
